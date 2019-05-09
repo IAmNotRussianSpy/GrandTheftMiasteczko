@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TopDownMovement : MonoBehaviour
 {
     Rigidbody2D body;
+
+    public Text kapitolText;
+    public Text lewiatanText;
 
     float horizontal;
     float vertical;
@@ -34,5 +38,7 @@ public class TopDownMovement : MonoBehaviour
         }
 
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        kapitolText.text = "Kapitol: " + PlayerStats.kapitol.ToString();
+        lewiatanText.text = "Lewiatan: " + PlayerStats.lewiatan.ToString();
     }
 }

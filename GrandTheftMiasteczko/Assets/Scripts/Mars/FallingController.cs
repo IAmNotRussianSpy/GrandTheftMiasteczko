@@ -45,5 +45,9 @@ public class FallingController : MonoBehaviour
         score++;
         Destroy(coll.gameObject);
         text.text = score.ToString();
+        if(PlayerStats.kapitol < score)
+        {
+            PlayerStats.kapitol = score;
+        }
     }
 }

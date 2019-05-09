@@ -61,5 +61,9 @@ public class Generator : MonoBehaviour
         var newObj = Instantiate(toSpawn, position, Quaternion.identity);
         score++;
         text.text = score.ToString();
+        if (PlayerStats.lewiatan < score)
+        {
+            PlayerStats.lewiatan = score;
+        }
     }
 }

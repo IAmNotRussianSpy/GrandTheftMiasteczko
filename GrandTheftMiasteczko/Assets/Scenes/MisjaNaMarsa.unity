@@ -954,7 +954,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniGame: Miasteczko
-  timeout: 3000
+  timeout: 1500
 --- !u!61 &1527718022
 BoxCollider2D:
   m_ObjectHideFlags: 0
