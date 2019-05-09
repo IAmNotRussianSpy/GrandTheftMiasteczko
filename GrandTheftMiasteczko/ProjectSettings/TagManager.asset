@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Chips
+  - Beer
+  - MagicPotion
   layers:
   - Default
   - TransparentFX
@@ -41,9 +44,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 2799746637
+    locked: 0
   - name: bottom
     uniqueID: 3244115999
     locked: 0
   - name: top
     uniqueID: 904640135
+    locked: 0
+  - name: Drops
+    uniqueID: 3592599929
     locked: 0
