@@ -19,7 +19,7 @@ public class FallingCameraController : MonoBehaviour
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        transform.position = new Vector3(0, player.transform.position.y-4, transform.position.z);
+        transform.position = new Vector3(0, player.transform.position.y-3, transform.position.z);
         
     }
 }
