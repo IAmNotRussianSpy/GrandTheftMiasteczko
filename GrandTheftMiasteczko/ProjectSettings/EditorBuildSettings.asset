@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MisjaNaMarsa.unity
     guid: e9bff80e4ecee1e4eb8f4c7d4bb76169
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: a43ae7bf9de7d804391546b5a874efe5
   m_configObjects: {}

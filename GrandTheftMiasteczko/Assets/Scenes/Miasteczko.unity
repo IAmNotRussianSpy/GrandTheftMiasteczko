@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniGame: MisjaNaMarsa
+  timeout: 0
 --- !u!61 &427762523
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -696,6 +697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniGame: SampleScene
+  timeout: 1
 --- !u!1 &2095621989
 GameObject:
   m_ObjectHideFlags: 0
