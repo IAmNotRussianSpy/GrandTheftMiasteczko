@@ -17,6 +17,6 @@ public class RedBullController : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        Debug.Log("Dupa");
+        //Debug.Log("Dupa");
     }
 }
