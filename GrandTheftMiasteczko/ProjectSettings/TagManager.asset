@@ -44,12 +44,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: background
+    uniqueID: 2799746637
+    locked: 0
   - name: bottom
     uniqueID: 3244115999
     locked: 0
   - name: top
     uniqueID: 904640135
     locked: 0
-  - name: background
-    uniqueID: 2799746637
+  - name: Drops
+    uniqueID: 3592599929
     locked: 0

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2446549261353831763}
   - component: {fileID: 8462494487003187393}
   - component: {fileID: 7878896355705010513}
+  - component: {fileID: 8268356040665597947}
   m_Layer: 0
   m_Name: pifko
   m_TagString: Beer
@@ -67,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 904640135
-  m_SortingLayer: 2
+  m_SortingLayerID: -702367367
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 89e13ccf33e266a40b4a3bb8e547569e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -128,3 +129,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8268356040665597947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647984723503263023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e43bbf7a270d1d4ea6d10eabab2d7ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runSpeed: 0.5

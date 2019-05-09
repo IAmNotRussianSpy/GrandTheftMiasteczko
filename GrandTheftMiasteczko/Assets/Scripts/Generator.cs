@@ -4,12 +4,14 @@ public class Generator : MonoBehaviour
 {
     public GameObject[] Beer;
     public GameObject[] Chips;
-    public GameObject[] MagicPotion
+    public GameObject[] MagicPotion;
     public Vector2 posMin;
     public Vector2 posMax;
     public float interval = 2f;
     [Range(0f, 1f)]
-    public float chanceGoodDrop = 0.5f;
+    public float chanceBeer = 0.5f;
+    [Range(0f, 1f)]
+    public float chanceChips = 0.25f;
 
     private float timer = 0f;
 
@@ -31,19 +33,25 @@ public class Generator : MonoBehaviour
 
     private void SpawnObject()
     {
-        if(Beer == null || Chips == null || MagicPotion() == null)
+        if(Beer == null || Chips == null || MagicPotion == null)
         {
             return;
         }
-        bool isGood = Random.value > 1 - chanceGoodDrop;
+        bool isBeer = Random.value > 1 - chanceBeer;
+        bool isChips = Random.value > 1 - chanceChips;
         GameObject toSpawn = null;
-        if(isGood)
+        if(isBeer)
         {
-            toSpawn = goodThings[Random.Range(0, goodThings.Length)];
+            toSpawn = Beer[Random.Range(0, Beer.Length)];
+        }
+        else if(isChips)
+
+        {
+            toSpawn = Chips[Random.Range(0, Chips.Length)];
         }
         else
         {
-            toSpawn = badThings[Random.Range(0, badThings.Length)];
+            toSpawn = MagicPotion[Random.Range(0, MagicPotion.Length)];
         }
 
         Vector3 position = new Vector3(Random.Range(posMin.x, posMax.x), Random.Range(posMin.y, posMax.y), 0);

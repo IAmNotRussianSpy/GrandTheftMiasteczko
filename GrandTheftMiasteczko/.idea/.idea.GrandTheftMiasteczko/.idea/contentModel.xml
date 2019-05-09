@@ -12,6 +12,7 @@
           <e p="FallingController.cs" t="Include" />
           <e p="GameStartTrigger.cs" t="Include" />
           <e p="Generator.cs" t="Include" />
+          <e p="ItemDropController.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
           <e p="TopDownMovement.cs" t="Include" />
         </e>
