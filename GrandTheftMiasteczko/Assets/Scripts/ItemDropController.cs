@@ -14,6 +14,8 @@ public class ItemDropController : MonoBehaviour
     private float timeForDrop = 0;
     public float runSpeed = 0.5f;
     private float interval = 2.0f;
+    public bool entered = false;
+    float timer = 0;
 
     void Start()
     {
@@ -29,11 +31,26 @@ public class ItemDropController : MonoBehaviour
         {
             enabled = false;
         }
+        if (entered)
+        {
+            //Increment timer
+            timer += Time.deltaTime;
+
+            //Load scene if counter has reached the nSecond
+            if (timer > interval)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Miasteczko");
+            }
+        }
+        else
+        {
+            //Reset timer when it's no longer pointing
+            timer = 0;
+        }
     }
 
     void FixedUpdate()
     {
-        timeForDrop = 0;
         body.velocity = body.velocity + new Vector2(horizontal * runSpeed, 0);
         if (body.velocity.x > maxVelocity)
         {
@@ -42,5 +59,16 @@ public class ItemDropController : MonoBehaviour
         {
             body.velocity = new Vector2((-1*maxVelocity), body.velocity.y);
         }
+    }
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        //Debug.Log("lol");
+        entered = true;
+    }
+    void OnTriggerExit2D(Collider2D coll)
+    {
+        //Debug.Log("lol");
+        entered = false;
     }
 }

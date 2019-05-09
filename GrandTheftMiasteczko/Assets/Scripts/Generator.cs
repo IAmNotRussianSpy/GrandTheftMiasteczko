@@ -1,13 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class Generator : MonoBehaviour
 {
     public GameObject[] Beer;
     public GameObject[] Chips;
     public GameObject[] MagicPotion;
+    public Text text;
     public Vector2 posMin;
     public Vector2 posMax;
-    public float interval = 2f;
+    public float interval = 1f;
+    public int score = 0;
     [Range(0f, 1f)]
     public float chanceBeer = 0.5f;
     [Range(0f, 1f)]
@@ -56,5 +59,7 @@ public class Generator : MonoBehaviour
 
         Vector3 position = new Vector3(Random.Range(posMin.x, posMax.x), Random.Range(posMin.y, posMax.y), 0);
         var newObj = Instantiate(toSpawn, position, Quaternion.identity);
+        score++;
+        text.text = score.ToString();
     }
 }
