@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 1664867}
   - component: {fileID: 1664866}
   m_Layer: 0
-  m_Name: black (1)
+  m_Name: wallR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 246945713}
   - component: {fileID: 246945714}
   m_Layer: 0
-  m_Name: man
+  m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,7 +340,7 @@ Transform:
   m_GameObject: {fileID: 246945709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.9045076, y: 63.05121, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 485156907}
   - component: {fileID: 485156906}
   m_Layer: 0
-  m_Name: black (2)
+  m_Name: wallL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 662274639}
   - component: {fileID: 662274637}
   m_Layer: 0
-  m_Name: black
+  m_Name: bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

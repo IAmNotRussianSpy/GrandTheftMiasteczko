@@ -11,7 +11,7 @@ public class RedBullGenerator : MonoBehaviour
     {
         for(int i=-130; i<60; i=i+5)
         {
-            Instantiate(redBullPrefab, new Vector3(Random.Range(-10.0f, 10.0f), i, 0), Quaternion.identity);
+            Instantiate(redBullPrefab, new Vector3(Random.Range(-9.0f, 9.0f), i, 0), Quaternion.identity);
         }
 
         
