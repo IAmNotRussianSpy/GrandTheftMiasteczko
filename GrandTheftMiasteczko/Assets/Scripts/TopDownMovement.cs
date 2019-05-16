@@ -9,6 +9,7 @@ public class TopDownMovement : MonoBehaviour
 
     public Text kapitolText;
     public Text lewiatanText;
+    public Text babilonText;
 
     float horizontal;
     float vertical;
@@ -40,5 +41,6 @@ public class TopDownMovement : MonoBehaviour
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
         kapitolText.text = "Kapitol: " + PlayerStats.kapitol.ToString();
         lewiatanText.text = "Lewiatan: " + PlayerStats.lewiatan.ToString();
+        babilonText.text = "Babilon: " + PlayerStats.babilon.ToString();
     }
 }

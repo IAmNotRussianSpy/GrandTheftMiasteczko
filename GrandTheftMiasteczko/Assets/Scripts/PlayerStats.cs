@@ -4,6 +4,6 @@ using UnityEngine;
 
 public static class PlayerStats
 {
-    public static int lewiatan, kapitol;
+    public static int lewiatan, kapitol, babilon;
 
 }

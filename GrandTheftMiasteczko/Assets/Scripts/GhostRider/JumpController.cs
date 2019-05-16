@@ -33,4 +33,9 @@ public class JumpController : MonoBehaviour
         }
         
     }
+
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Miasteczko");
+    }
 }

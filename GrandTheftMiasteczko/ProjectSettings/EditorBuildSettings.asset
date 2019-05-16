@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lewiatan.unity
     guid: 01a14826126c3054f87ff7522e56d9c7
+  - enabled: 1
+    path: Assets/Scenes/GhostRider.unity
+    guid: 9bd1814a0efe272469009a533c7911fd
   m_configObjects: {}
