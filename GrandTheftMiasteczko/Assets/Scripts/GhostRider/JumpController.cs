@@ -19,7 +19,7 @@ public class JumpController : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown(KeyCode.Space)) 
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) 
         {
             if (player.position.y < -3.3)
             {
