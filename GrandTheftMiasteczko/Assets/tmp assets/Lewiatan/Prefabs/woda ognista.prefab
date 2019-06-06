@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6054083000385632182}
   - component: {fileID: 7829124900927867145}
-  - component: {fileID: 1903008315993954759}
   - component: {fileID: 5624128406616900341}
   - component: {fileID: 513619238639459143}
+  - component: {fileID: 1467576156679135678}
   m_Layer: 0
   m_Name: woda ognista
   m_TagString: MagicPotion
@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6557286639404329064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.08, y: -0.75, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 6.08, y: -0.72, z: 0}
+  m_LocalScale: {x: 0.7610742, y: 0.7610742, z: 1.5221484}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: -702367367
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 97366e2b106203f45ad76b3c1a2f7e47, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc80e25988744ec45a5343b9e18e7496, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82,32 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &1903008315993954759
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6557286639404329064}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.63, y: 5.97}
-    newSize: {x: 1.63, y: 5.97}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.63, y: 5.97}
-  m_EdgeRadius: 0
 --- !u!50 &5624128406616900341
 Rigidbody2D:
   serializedVersion: 4
@@ -141,3 +115,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e43bbf7a270d1d4ea6d10eabab2d7ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  runSpeed: 0.5
+  entered: 0
+--- !u!60 &1467576156679135678
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6557286639404329064}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.96, y: 6.14}
+    newSize: {x: 1.63, y: 5.97}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.83, y: -2.54}
+      - {x: 0.76, y: -2.46}
+      - {x: 0.78, y: -2.3}
+      - {x: 0.78999996, y: -1.74}
+      - {x: 0.79999995, y: -0.85999995}
+      - {x: 0.82, y: -0.04}
+      - {x: 0.83, y: 0.35}
+      - {x: 0.83, y: 0.82}
+      - {x: 0.71, y: 0.90999997}
+      - {x: 0.41, y: 1.12}
+      - {x: 0.42999998, y: 1.37}
+      - {x: 0.42999998, y: 1.5899999}
+      - {x: 0.35999998, y: 1.8199999}
+      - {x: 0.35, y: 3.07}
+      - {x: -0.11, y: 3.07}
+      - {x: -0.29, y: 3.06}
+      - {x: -0.35, y: 2.99}
+      - {x: -0.34, y: 1.8399999}
+      - {x: -0.35999998, y: 1.8399999}
+      - {x: -0.42, y: 1.5799999}
+      - {x: -0.41, y: 1.27}
+      - {x: -0.39999998, y: 1.1}
+      - {x: -0.77, y: 0.85999995}
+      - {x: -0.82, y: 0.78999996}
+      - {x: -0.82, y: 0.59999996}
+      - {x: -0.81, y: 0.55}
+      - {x: -0.81, y: 0.25}
+      - {x: -0.78999996, y: -0.78999996}
+      - {x: -0.78, y: -1.79}
+      - {x: -0.76, y: -2.26}
+      - {x: -0.78, y: -2.26}
+      - {x: -0.76, y: -2.46}
+      - {x: -0.82, y: -2.56}
+      - {x: -0.82, y: -2.9399998}
+      - {x: -0.69, y: -3}
+      - {x: -0.34, y: -3.04}
+      - {x: 0.17, y: -3.07}
+      - {x: 0.25, y: -3.07}
+      - {x: 0.45, y: -3.03}
+      - {x: 0.79999995, y: -2.97}
+      - {x: 0.83, y: -2.9399998}
