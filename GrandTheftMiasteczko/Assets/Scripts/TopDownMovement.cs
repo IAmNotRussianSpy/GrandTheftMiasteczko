@@ -10,12 +10,15 @@ public class TopDownMovement : MonoBehaviour
     public Text kapitolText;
     public Text lewiatanText;
     public Text babilonText;
+    public Animator animator;
+    public SpriteRenderer renderer;
 
     float horizontal;
     float vertical;
     float moveLimiter = 0.7f;
 
     public float runSpeed = 10.0f;
+    private bool isFacingRight = false;
 
     void Start()
     {
@@ -33,6 +36,16 @@ public class TopDownMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (horizontal > 0 && !isFacingRight)
+        {
+            renderer.flipX = true;
+            isFacingRight = !isFacingRight;
+        }
+        if (horizontal < 0 && isFacingRight)
+        {
+            renderer.flipX = false;
+            isFacingRight = !isFacingRight;
+        }
         if (horizontal != 0 && vertical != 0) // Check for diagonal movement
         {
             // limit movement speed diagonally, so you move at 70% speed
@@ -43,8 +56,9 @@ public class TopDownMovement : MonoBehaviour
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         }
-
-            body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+        
+        animator.SetFloat("player speed", (Mathf.Abs(horizontal)+Mathf.Abs(vertical)));
+        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
         kapitolText.text = "Kapitol: " + PlayerStats.kapitol.ToString();
         lewiatanText.text = "Lewiatan: " + PlayerStats.lewiatan.ToString();
         babilonText.text = "Babilon: " + PlayerStats.babilon.ToString();
