@@ -28,6 +28,8 @@ public class TopDownMovement : MonoBehaviour
         horizontal = Input.GetAxisRaw("Horizontal"); // -1 is left
         vertical = Input.GetAxisRaw("Vertical"); // -1 is down
     }
+    
+
 
     void FixedUpdate()
     {
@@ -37,8 +39,12 @@ public class TopDownMovement : MonoBehaviour
             horizontal *= moveLimiter;
             vertical *= moveLimiter;
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
+        }
 
-        body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
+            body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
         kapitolText.text = "Kapitol: " + PlayerStats.kapitol.ToString();
         lewiatanText.text = "Lewiatan: " + PlayerStats.lewiatan.ToString();
         babilonText.text = "Babilon: " + PlayerStats.babilon.ToString();
