@@ -57,7 +57,7 @@ public class Generator : MonoBehaviour
             toSpawn = MagicPotion[Random.Range(0, MagicPotion.Length)];
         }
 
-        Vector3 position = new Vector3(Random.Range(posMin.x, posMax.x), Random.Range(posMin.y, posMax.y), 0);
+        Vector3 position = new Vector3(Random.Range(posMin.x/2, posMax.x/2), Random.Range(posMin.y, posMax.y), 0);
         var newObj = Instantiate(toSpawn, position, Quaternion.identity);
         score++;
         text.text = score.ToString();

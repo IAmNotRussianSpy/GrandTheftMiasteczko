@@ -400,6 +400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 582263582}
   - component: {fileID: 582263583}
+  - component: {fileID: 582263584}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -424,8 +425,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 427.6, y: 321.7}
+  m_SizeDelta: {x: -855.2, y: -643.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &582263583
 CanvasRenderer:
@@ -435,6 +436,33 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582263581}
   m_CullTransparentMesh: 0
+--- !u!114 &582263584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582263581}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 0.6509804}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &633861267
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,12 +684,12 @@ MonoBehaviour:
   MagicPotion:
   - {fileID: 6557286639404329064, guid: 317a4e6e00d9dbd4d924a9881b41b211, type: 3}
   text: {fileID: 2014282932}
-  posMin: {x: -4, y: 3}
-  posMax: {x: 4, y: 3}
+  posMin: {x: -4, y: 4}
+  posMax: {x: 4, y: 4}
   interval: 2
   score: 0
   chanceBeer: 0.291
-  chanceChips: 0.25
+  chanceChips: 0.278
 --- !u!4 &920429292
 Transform:
   m_ObjectHideFlags: 0
@@ -921,7 +949,7 @@ RectTransform:
   m_GameObject: {fileID: 2014282930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5491, y: 1.5491, z: 1}
   m_Children: []
   m_Father: {fileID: 582263582}
   m_RootOrder: 0
@@ -952,7 +980,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 1f3d8d74be54119448718417468c7830, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -1021,10 +1049,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 960, y: 540}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

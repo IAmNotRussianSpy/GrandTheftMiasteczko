@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 3ad1236a0ea440d459a8575123890f08
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Junction
+  fontNames:
+  - Junction
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 1f3d8d74be54119448718417468c7830, type: 3}
+  - {fileID: 12800000, guid: 09b391a7e471987498425f3b36b3f240, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
