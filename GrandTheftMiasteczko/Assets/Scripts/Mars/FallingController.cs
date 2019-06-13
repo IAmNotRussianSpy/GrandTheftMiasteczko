@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class FallingController : MonoBehaviour
 {
     Rigidbody2D body;
+    public AudioClip pickup;
+    private AudioSource source;
     public int score = 0;
     public Text text;
 
@@ -15,6 +17,11 @@ public class FallingController : MonoBehaviour
     float maxVelocity = 10;
 
     public float runSpeed = 0.5f;
+
+    private void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     void Start()
     {
@@ -43,6 +50,7 @@ public class FallingController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D coll)
     {
         score++;
+        source.PlayOneShot(pickup);
         Destroy(coll.gameObject);
         text.text = score.ToString();
         if(PlayerStats.kapitol < score)
