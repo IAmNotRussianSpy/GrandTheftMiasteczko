@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class Generator : MonoBehaviour
 {
+    public AudioClip beep;
+    private AudioSource source;
     public GameObject[] Beer;
     public GameObject[] Chips;
     public GameObject[] MagicPotion;
@@ -17,6 +19,11 @@ public class Generator : MonoBehaviour
     public float chanceChips = 0.25f;
 
     private float timer = 0f;
+
+    private void Awake()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -59,6 +66,7 @@ public class Generator : MonoBehaviour
 
         Vector3 position = new Vector3(Random.Range(posMin.x/2, posMax.x/2), Random.Range(posMin.y, posMax.y), 0);
         var newObj = Instantiate(toSpawn, position, Quaternion.identity);
+        source.PlayOneShot(beep);
         score++;
         text.text = score.ToString();
         if (PlayerStats.lewiatan < score)
