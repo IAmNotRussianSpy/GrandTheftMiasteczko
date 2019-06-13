@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 32
+  controlID: 11
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 0
     width: 428
     height: 868
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 107
+  controlID: 12
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 108
+  controlID: 13
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -401,20 +401,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/GhostRider
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts/GhostRider
+  - Assets/Scenes
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\___Magazyn\Projekty GK\GrandTheftMiasteczko\GrandTheftMiasteczko\GrandTheftMiasteczko
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 0c340000
-    m_LastClickedID: 13324
-    m_ExpandedIDs: 00000000f23000007032000014330000683300006c33000096330000663400008e340000c03400000036000000ca9a3b
+    m_SelectedIDs: e0290000
+    m_LastClickedID: 10720
+    m_ExpandedIDs: 0000000062260000202800003a290000c2290000cc2900000a2a0000662b0000ae2b00000a2c0000182e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -442,7 +442,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f23000007032000014330000683300006c33000096330000663400008e340000c034000000360000
+    m_ExpandedIDs: 0000000062260000202800003a290000c2290000cc2900000a2a0000662b0000ae2b00000a2c0000182e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -563,7 +563,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 22bbffff36bbffff64bcffff6abcffff74bcffff7ebcffff8abcffff7abeffffc6beffffdabeffffdcbeffffe0beffffe4beffffe8beffffecbeffff2ac8ffff3ec8ffff72c9ffff78c9ffff7cc9ffff84c9ffff92c9ffff84caffff7ecbffff92cbffffc6ccffffcaccffffd4ccffffdeccffffecccffff04ceffff70ceffff84ceffff8aceffff92ceffff9aceffffa2ceffffaacefffff8ceffff44d2ffff8ad2ffff00d3ffff36d3ffff4ad3ffff7ed4ffff84d4ffff88d4ffff90d4ffff9ed4ffff3cd5ffffced5ffff98d6fffff4d7ffff08d8ffff0ad8ffff0ed8ffff12d8ffff16d8ffff1ad8ffff1ad9ffff2ed9ffff30d9ffff34d9ffff38d9ffff3cd9ffff40d9ffffe2daffffeedaffff26dcffff68dcffff7cdcffff7edcffff82dcffff86dcffff8adcffff8edcffffeadcfffffedcffff32deffff36deffff40deffff4adeffff5adeffffb6e0ffffe4e0fffff6e0fffff8e0fffffce0ffff00e1ffff04e1ffff08e1ffff44e1ffff4ee1ffff84e1ffffd0e1ffff20e2ffff64e2ffff96e3ffff18e4ffff46e4ffff58e4ffff82e5ffff88e5ffff8ce5ffff94e5ffffa4e5ffff5ae6ffff00e7ffffa2e7ffff56efffffc4360000dc370000e840000000410000f241000028420000124300001c43000096470000ae4700002248000038480000424800004c480000424900005a490000ce490000044a0000164a00002e4a0000a24a0000d84a0000644d00006e4d00007c5200006a5c0000745c0000265f00003e600000a06700006c7000005a7400007a750000427600004c760000747c00008e7c0000787d0000b07d0000787e0000827e0000
+      m_ExpandedIDs: 7af8ffffbcf8ffffd0f8ffff04faffff0afaffff0efaffff16faffff24faffff12fbffff80fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -618,9 +618,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 356.10522, y: 231.54242, z: -13.280515}
+    m_Target: {x: -17.240978, y: 69.04479, z: -0.3132775}
     speed: 2
-    m_Value: {x: 356.10522, y: 231.54242, z: -13.280515}
+    m_Value: {x: -17.240978, y: 69.04479, z: -0.3132775}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -652,9 +652,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 906.186
+    m_Target: 36.9325
     speed: 2
-    m_Value: 906.186
+    m_Value: 36.9325
   m_Ortho:
     m_Target: 1
     speed: 2
