@@ -7,11 +7,13 @@ public class JumpController : MonoBehaviour
     public Vector2 jumpHeight;
     public Rigidbody2D player;
     private int jumps = 0;
+    public AudioClip boing;
+    private AudioSource source;
 
     // Use this for initialization
-    void Start()
+    private void Awake()
     {
-
+        source = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -28,6 +30,7 @@ public class JumpController : MonoBehaviour
             if (jumps<2)
             {
                 player.AddForce(jumpHeight, ForceMode2D.Impulse);
+                source.PlayOneShot(boing);
                 jumps++;
             }
         }
