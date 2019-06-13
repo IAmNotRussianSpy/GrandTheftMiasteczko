@@ -59,3 +59,6 @@ TagManager:
   - name: Uber Top
     uniqueID: 612910451
     locked: 0
+  - name: Minimap
+    uniqueID: 3403100671
+    locked: 0
